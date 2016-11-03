@@ -10,6 +10,7 @@ import UIKit
 
 class PunsViewController: UIViewController {
     @IBOutlet weak var punchline: UILabel!
+    @IBOutlet weak var nextBackButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,15 @@ class PunsViewController: UIViewController {
     }
 
     @IBAction func presentPunchline(_ sender: AnyObject) {
-        punchline.text = "How about a pun-chline?"
-        UIView.transition(with: self.view, duration: 0.2, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        if (punchline.text?.hasPrefix("So"))! {
+            punchline.text = "How about a pun-chline?"
+            nextBackButton.setTitle("back", for: .normal)
+            UIView.transition(with: self.view, duration: 0.4, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        } else {
+            punchline.text = "So, you want a pun, eh?"
+            nextBackButton.setTitle("next", for: .normal)
+            UIView.transition(with: self.view, duration: 0.4, options: .transitionFlipFromRight, animations: nil, completion: nil)
+        }
     }
 
 }

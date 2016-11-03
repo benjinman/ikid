@@ -10,6 +10,7 @@ import UIKit
 
 class GoodJokeViewController: UIViewController {
     @IBOutlet weak var jokeAndPunchline: UILabel!
+    @IBOutlet weak var nextBackButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,15 @@ class GoodJokeViewController: UIViewController {
     }
 
     @IBAction func presentPunchline(_ sender: AnyObject) {
-        jokeAndPunchline.text = "My jokes are still in Alpha, but soon they'll get Beta."
-        UIView.transition(with: self.view, duration: 0.2, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        if (jokeAndPunchline.text?.hasPrefix("What"))! {
+            jokeAndPunchline.text = "My jokes are still in Alpha, but soon they'll get Beta."
+            nextBackButton.setTitle("back", for: .normal)
+            UIView.transition(with: self.view, duration: 0.4, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        } else {
+            jokeAndPunchline.text = "What did the developer say when nobody laughed at his jokes?"
+            nextBackButton.setTitle("next", for: .normal)
+            UIView.transition(with: self.view, duration: 0.4, options: .transitionFlipFromRight, animations: nil, completion: nil)
+        }
     }
     
 }

@@ -49,6 +49,7 @@
                     <tabBarItem key="tabBarItem" title="Good" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="jokeAndPunchline" destination="2LS-Ep-C4o" id="JsO-m8-hSq"/>
+                        <outlet property="nextBackButton" destination="zhD-za-c14" id="SH4-kI-P0k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -98,6 +99,7 @@
                     <tabBarItem key="tabBarItem" title="Dad" image="first" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="jokeAndPunchline" destination="ztd-14-o03" id="Hv5-Uk-JW0"/>
+                        <outlet property="nextBackButton" destination="Tvf-XD-8o8" id="Pcp-Rb-H2E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -166,6 +168,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Puns" image="first" id="eCP-R2-PlO"/>
                     <connections>
+                        <outlet property="nextBackButton" destination="ncJ-gZ-P2a" id="jxa-Q3-rMX"/>
                         <outlet property="punchline" destination="wDi-x1-vKd" id="QQw-cy-apo"/>
                     </connections>
                 </viewController>

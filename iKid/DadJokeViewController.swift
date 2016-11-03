@@ -10,6 +10,7 @@ import UIKit
 
 class DadJokeViewController: UIViewController {
     @IBOutlet weak var jokeAndPunchline: UILabel!
+    @IBOutlet weak var nextBackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,15 @@ class DadJokeViewController: UIViewController {
     }
     
     @IBAction func presentPunchline(_ sender: AnyObject) {
-        jokeAndPunchline.text = "He gave me a hug."
-        UIView.transition(with: self.view, duration: 0.2, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        if (jokeAndPunchline.text?.hasPrefix("I"))! {
+            jokeAndPunchline.text = "He gave me a hug."
+            nextBackButton.setTitle("back", for: .normal)
+            UIView.transition(with: self.view, duration: 0.4, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        } else {
+            jokeAndPunchline.text = "I told my dad to embrace his mistakes..."
+            nextBackButton.setTitle("next", for: .normal)
+            UIView.transition(with: self.view, duration: 0.4, options: .transitionFlipFromRight, animations: nil, completion: nil)
+        }
     }
     
 }
