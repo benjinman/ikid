@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Good-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="GoodJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did the developer say when nobody laughed at his jokes?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LS-Ep-C4o">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="sW8-Kh-fAA"/>
+                                    <constraint firstAttribute="width" constant="300" id="u72-4V-JXb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhD-za-c14">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="8BL-WJ-9Mj"/>
+                                    <constraint firstAttribute="height" constant="30" id="uKl-ks-g4F"/>
+                                </constraints>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <action selector="presentPunchline:" destination="9pv-A4-QxB" eventType="touchUpInside" id="grd-sC-FOV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.81463878222831276" blue="0.32472332612195942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zhD-za-c14" secondAttribute="trailing" id="9q0-eP-kXt"/>
+                            <constraint firstItem="2LS-Ep-C4o" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="DWS-0Z-hfN"/>
+                            <constraint firstItem="2LS-Ep-C4o" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="NvQ-pw-WQF"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="zhD-za-c14" secondAttribute="bottom" id="sPv-Oh-YYe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="jokeAndPunchline" destination="2LS-Ep-C4o" id="JsO-m8-hSq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="-615.74212893553226"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="DadJokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I told my dad to embrace his mistakes..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-14-o03">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SPF-dd-1jQ"/>
+                                    <constraint firstAttribute="width" constant="300" id="djr-cz-D0S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvf-XD-8o8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GoB-qB-u8S"/>
+                                    <constraint firstAttribute="width" constant="40" id="xbC-GU-Bm9"/>
+                                </constraints>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <action selector="presentPunchline:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="n6r-Cq-0FA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78229853855373999" green="0.91096450210193169" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ztd-14-o03" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Cc4-xk-jaW"/>
+                            <constraint firstAttribute="trailing" secondItem="Tvf-XD-8o8" secondAttribute="trailing" id="U51-i1-hKC"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Tvf-XD-8o8" secondAttribute="bottom" id="a6d-fz-Hxa"/>
+                            <constraint firstItem="ztd-14-o03" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="bIz-Il-rLb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="jokeAndPunchline" destination="ztd-14-o03" id="Hv5-Uk-JW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="873.91304347826099"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="oR0-oc-FQE" kind="relationship" relationship="viewControllers" id="EvV-hX-qes"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Puns-->
+        <scene sceneID="BXa-Fc-kfx">
+            <objects>
+                <viewController id="oR0-oc-FQE" customClass="PunsViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gkv-op-wcp"/>
+                        <viewControllerLayoutGuide type="bottom" id="az1-EI-p0T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="69F-Mo-A2e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So, you want a pun, eh?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDi-x1-vKd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8N2-Va-7ox"/>
+                                    <constraint firstAttribute="height" constant="60" id="lFA-gS-uev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncJ-gZ-P2a">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="393-YR-pbb"/>
+                                    <constraint firstAttribute="width" constant="40" id="SGT-a5-vBr"/>
+                                </constraints>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <action selector="presentPunchline:" destination="oR0-oc-FQE" eventType="touchUpInside" id="aP7-2n-7DE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82313545040745917" green="1" blue="0.65241026591951456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="az1-EI-p0T" firstAttribute="top" secondItem="ncJ-gZ-P2a" secondAttribute="bottom" id="dEb-vY-vUd"/>
+                            <constraint firstAttribute="trailing" secondItem="ncJ-gZ-P2a" secondAttribute="trailing" id="ptw-oE-Etm"/>
+                            <constraint firstItem="wDi-x1-vKd" firstAttribute="centerY" secondItem="69F-Mo-A2e" secondAttribute="centerY" id="tnW-o7-7Eb"/>
+                            <constraint firstItem="wDi-x1-vKd" firstAttribute="centerX" secondItem="69F-Mo-A2e" secondAttribute="centerX" id="vqW-7J-47y"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Puns" image="first" id="eCP-R2-PlO"/>
+                    <connections>
+                        <outlet property="punchline" destination="wDi-x1-vKd" id="QQw-cy-apo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvy-72-i7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="99.400299850074973"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
